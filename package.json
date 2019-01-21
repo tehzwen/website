@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tehzwen.github.io/website/",
+  "homepage": "https://tehzwen.github.io/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
