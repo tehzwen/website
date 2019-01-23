@@ -10,13 +10,13 @@ class Header extends Component {
                 <div>
                     <header className="Siteheader">
                         <Link className="Headerlink" to="/website/" >Home</Link>
-                        <Link className="Headerlink" to="/website/projects/">Projects</Link>
-                        <Link className="Headerlink" to="/website/blog/">Blog</Link>
-                        <Link className="Headerlink" to="/website/about/">About</Link>
+                        <Link className="Headerlink" to="/projects/">Projects</Link>
+                        <Link className="Headerlink" to="/blog/">Blog</Link>
+                        <Link className="Headerlink" to="/about/">About</Link>
                     </header>
 
                     <Route path="/website/" component={Home} />
-                    <Route path="/website/projects/" component={Projects} />
+                    <Route path="/projects/" component={Projects} />
                     
                 </div>
             </Router>
