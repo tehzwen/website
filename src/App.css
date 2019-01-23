@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 
 .App {
   text-align: center;
-  background-color: #6f6f77;
+  background-color: #adadbb;
   height:100vh;
 
+}
+
+.HomeJumboTron {
+  font-family: 'Nanum Gothic';
+  background-color : #adadbb !important ;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .App-logo {
@@ -24,11 +33,17 @@
   padding-right: 10vh;
   padding-top: 5vh;
   font-size: 24px;
-  font-family: "Permanent Marker";
+  font-family: "Nanum Gothic";
   text-decoration: none;
   color: black;
   outline: 0;
 
+}
+
+.Headerlink:hover{
+  color:black;
+  text-decoration: none;
+  cursor:pointer;
 }
 
 .App-header {

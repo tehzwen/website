@@ -12,7 +12,6 @@ class App extends Component {
         <Header />
         <img src="https://i.imgur.com/IHJ2ELP.gif"
         alt="new"
-        
         />
       </div>
     );
