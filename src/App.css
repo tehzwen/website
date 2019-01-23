@@ -8,24 +8,24 @@
 
 }
 
-.HomeJumboTron {
-  font-family: 'Nanum Gothic';
-  background-color : #adadbb !important ;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
 
-.Siteheader{
-  background-color: #27a4a8;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  min-height: 10vh;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
 }
 
 .Headerlink{
@@ -44,21 +44,56 @@
   color:black;
   text-decoration: none;
   cursor:pointer;
+  opacity: 0.2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.HomeJumboTron {
+  font-family: 'Nanum Gothic';
+  background-color : #adadbb !important ;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ProjectContainer{
+  display:flex;
+  flex-direction: row;
+  border:1px solid white;
+}
+
+
+
+.ProjectImage{
+  height:20vh;
+  width:20vh;
+}
+
+.ProjectTitle{
+  display:flex;
+  font-family: 'Nanum Gothic';
+  font-size: 32px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  text-align: center;
+  flex:0.5;
+  text-decoration: none;
+  color: black;
+  outline: 0;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.ProjectTitle:hover{
+  color:black;
+  text-decoration: none;
+  cursor:pointer;
+  opacity: 0.2;
+}
+
+.Siteheader{
+  background-color: #27a4a8;
+  display: flex;
+  min-height: 10vh;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {

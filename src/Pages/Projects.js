@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
+import ProjectBlock from '../Components/ProjectBlock';
 
 class Projects extends Component {
     render(){
         return (
 
             <div>
-                <h1>
-                    hey
-                </h1>
+                <ProjectBlock title="OpenCV Rock Paper Scissors"/>
             </div>
         )
     }

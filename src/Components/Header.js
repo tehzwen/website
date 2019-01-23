@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Projects from '../Pages/Projects';
 import Home from '../Pages/Home';
+import RPS from '../Pages/OpenCVRPS';
 
 class Header extends Component {
     render() {
@@ -17,6 +18,7 @@ class Header extends Component {
 
                     <Route path="/website/" component={Home} />
                     <Route path="/projects/" component={Projects} />
+                    <Route path="/opencvrockpaperscissors/" component={RPS}/>
                     
                 </div>
             </Router>
