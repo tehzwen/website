@@ -4,7 +4,7 @@
 .App {
   text-align: center;
   background-color: #adadbb;
-  height:100vh;
+  height:100%;
 
 }
 
@@ -39,6 +39,36 @@
   outline: 0;
 
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+  background-color:#27a4a8 !important;
+}
+
+
+.carousel-indicators li{
+  border-radius: 50% !important;
+  width: 20px !important;
+  height: 20px !important;
+  background-color: #27a4a8 !important;
+}
+
+.CarouselDescText{
+  font-family: "Nanum Gothic";
+  color:#adadbb;
+}
+
+.CarouselTitleText{
+  font-family: "Nanum Gothic";
+  color: #27a4a8;
+}
+
 
 .Headerlink:hover{
   color:black;
