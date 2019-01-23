@@ -9,14 +9,14 @@ class Header extends Component {
             <Router>
                 <div>
                     <header className="Siteheader">
-                        <Link className="Headerlink" to="/home/" >Home</Link>
-                        <Link className="Headerlink" to="/projects/">Projects</Link>
-                        <Link className="Headerlink" to="/blog/">Blog</Link>
-                        <Link className="Headerlink" to="/about/">About</Link>
+                        <Link className="Headerlink" to="/website/" >Home</Link>
+                        <Link className="Headerlink" to="/website/projects/">Projects</Link>
+                        <Link className="Headerlink" to="/website/blog/">Blog</Link>
+                        <Link className="Headerlink" to="/website/about/">About</Link>
                     </header>
 
-                    <Route path="/home/" component={Home} />
-                    <Route path="/projects/" component={Projects} />
+                    <Route path="/website/" component={Home} />
+                    <Route path="/website/projects/" component={Projects} />
                     
                 </div>
             </Router>
