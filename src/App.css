@@ -67,8 +67,8 @@
 .CarouselTitleText{
   font-family: "Nanum Gothic";
   color: #27a4a8;
+  text-shadow: 2px 2px 4px black;
 }
-
 
 .Headerlink:hover{
   color:black;
@@ -84,14 +84,22 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.ProjectsButton{
+  color: black !important;
+  font-family: "Nanum Gothic" !important;
+  background-color: #27a4a8 !important;
+  border-color: #27a4a8 !important;
+}
+.ProjectsButton:hover{
+  opacity: 0.5;
+}
 
 .ProjectContainer{
   display:flex;
   flex-direction: row;
   border:1px solid white;
+  margin-top: 10px;
 }
-
-
 
 .ProjectImage{
   height:20vh;

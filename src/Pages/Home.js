@@ -27,13 +27,13 @@ class Home extends React.Component {
             <Router>
                 <div style={{ 'position': 'relative', 'justify-content': 'center', 'height': '100vh' }}>
                     <Jumbotron className="HomeJumboTron" >
-                        <h1>Hello, my name is Zachary Shaw</h1>
+                        <h1>Hello, my name is <b>Zachary Shaw</b></h1>
                         <p>
                             I'm a Canadian Computer Science student who loves making
                             software that solves problems
                         </p>
                         <p>
-                            <Button onClick={this.handleButtonPress}>Learn more</Button>
+                            <Button className="ProjectsButton" onClick={this.handleButtonPress}>Learn more</Button>
                         </p>
                     </Jumbotron>
                 </div>

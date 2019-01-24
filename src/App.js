@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Components/Header';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Projects from './Pages/Projects';
+import Footer from './Components/Footer';
 
 class App extends Component {
   render() {
@@ -13,7 +14,9 @@ class App extends Component {
         <img src="https://i.imgur.com/IHJ2ELP.gif"
         alt="new"
         />
+        <Footer/>
       </div>
+
     );
   }
 }
