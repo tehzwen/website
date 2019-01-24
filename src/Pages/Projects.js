@@ -31,7 +31,7 @@ class Projects extends Component {
                     </Carousel.Item>
                 </Carousel>
 
-                <ProjectBlock title="Appraisale: Mobile App" />
+                <ProjectBlock title="Appraisale Mobile App" imageName="appraisaleLogo.png" />
                 <ProjectBlock title="OpenCV Rock Paper Scissors" />
                 <ProjectBlock title="C UDP Programming" />
             </div>
