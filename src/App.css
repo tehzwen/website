@@ -130,7 +130,7 @@
 }
 
 .Siteheader{
-  background-color: #27a4a8;
+  background:linear-gradient(#27a4a8,transparent);
   display: flex;
   min-height: 10vh;
   justify-content: center;
