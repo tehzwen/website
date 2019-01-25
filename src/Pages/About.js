@@ -26,7 +26,7 @@ class About extends Component {
                 <a className="AboutText" href="https://github.com/tehzwen">here</a>
                 <text className="AboutText"> as well </text>
                 <br></br>
-                <text className="AboutText">as under the projects page on this site. I love working on new projects with passionate people</text>
+                <text className="AboutText">as under the projects tab on this site. I love working with passionate people</text>
                 <br></br>
                 <text className="AboutText"> on exciting projects. Inquiries can be sent to zachthm@gmail.com.</text>
                 <br></br>
