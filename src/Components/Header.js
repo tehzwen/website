@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Projects from '../Pages/Projects';
 import Home from '../Pages/Home';
 import RPS from '../Pages/OpenCVRPS';
+import About from '../Pages/About';
 
 class Header extends Component {
     render() {
@@ -19,6 +20,7 @@ class Header extends Component {
                     <Route path="/website/" component={Home} />
                     <Route path="/projects/" component={Projects} />
                     <Route path="/opencvrockpaperscissors/" component={RPS}/>
+                    <Route path="/about/" component={About}/>
                     
                 </div>
             </Router>

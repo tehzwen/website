@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 
+.AboutText{
+  font-family: "Nanum Gothic";
+  text-align: left;
+}
+
+.AboutTitle{
+  font-family: "Nanum Gothic";
+  padding:40px;
+}
+
 .App {
   text-align: center;
-  background-color: #adadbb;
+  background:linear-gradient(rgba(0,0,0,0.5),transparent);
   height:100%;
 
 }
@@ -39,18 +49,6 @@
   outline: 0;
 
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: 1px solid black;
-  background-image: none;
-  background-color:#27a4a8 !important;
-}
-
 
 .carousel-indicators li{
   border-radius: 50% !important;
@@ -61,13 +59,17 @@
 
 .CarouselDescText{
   font-family: "Nanum Gothic";
-  color:#adadbb;
+  color:#ffffff;
 }
 
 .CarouselTitleText{
   font-family: "Nanum Gothic";
   color: #27a4a8;
   text-shadow: 2px 2px 4px black;
+}
+
+.FooterText{
+  font-family: "Nanum Gothic";
 }
 
 .Headerlink:hover{
@@ -79,7 +81,7 @@
 
 .HomeJumboTron {
   font-family: 'Nanum Gothic';
-  background-color : #adadbb !important ;
+  background-color : #8a838300 !important ;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -97,7 +99,7 @@
 .ProjectContainer{
   display:flex;
   flex-direction: row;
-  border:1px solid white;
+  border:1px solid rgb(0, 0, 0);
   margin-top: 10px;
 }
 
@@ -141,4 +143,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.ZachPic{
+  transform: rotate(-90deg);
+  height: 25vh;
+  width: 25vh;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
 }

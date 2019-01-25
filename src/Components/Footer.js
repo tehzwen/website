@@ -5,11 +5,11 @@ class Footer extends Component {
     render(){
         return(
             <div>
-                <text><b>Zachary Shaw</b></text>
+                <text className="FooterText"><b>Zachary Shaw</b></text>
                 <br/>
-                <text>Ⓒ	Copyright 2018-2019</text>
+                <text className="FooterText">Ⓒ	Copyright 2018-2019</text>
                 <br/>
-                <text>All rights reserved.</text>
+                <text className="FooterText"><i>All rights reserved.</i></text>
             </div>
         )
     }
