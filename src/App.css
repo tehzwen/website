@@ -108,6 +108,24 @@
   width:10%;
 }
 
+.ProjectPageText{
+  font-family: 'Nanum Gothic';
+  font-size: 11;
+  text-align: left;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-bottom: 10vh;
+}
+
+.ProjectPageTitle{
+  font-family: 'Nanum Gothic';
+  font-weight: bold;
+  margin-top: 5vh;
+  margin-left: 10vh;
+  margin-bottom: 2vh;
+  text-align: left;
+}
+
 .ProjectTitle{
   display:flex;
   font-family: 'Nanum Gothic';
@@ -132,7 +150,7 @@
 .Siteheader{
   background:linear-gradient(#27a4a8,transparent);
   display: flex;
-  min-height: 10vh;
+  min-height: 18vh;
   justify-content: center;
 }
 

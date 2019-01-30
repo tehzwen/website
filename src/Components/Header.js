@@ -4,6 +4,7 @@ import Projects from '../Pages/Projects';
 import Home from '../Pages/Home';
 import RPS from '../Pages/OpenCVRPS';
 import About from '../Pages/About';
+import Appraisale from '../Pages/Appraisale';
 
 class Header extends Component {
     render() {
@@ -21,6 +22,7 @@ class Header extends Component {
                     <Route path="/projects/" component={Projects} />
                     <Route path="/opencvrockpaperscissors/" component={RPS}/>
                     <Route path="/about/" component={About}/>
+                    <Route path="/appraisalemobileapp/" component={Appraisale}/>
                     
                 </div>
             </Router>

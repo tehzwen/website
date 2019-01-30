@@ -30,6 +30,7 @@ class Projects extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+                <div style={{marginTop:100}}></div>
 
                 <ProjectBlock title="Appraisale Mobile App" imageName="appraisaleLogo.png" />
                 <ProjectBlock title="OpenCV Rock Paper Scissors" />
