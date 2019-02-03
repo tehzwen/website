@@ -37,6 +37,11 @@ class RPS extends Component {
                     became more robust at accurately detecting the gesture at different angles
                      and orientations. Overall, was a fun project where I got to put some of 
                     the class concepts to the test and experiment.
+
+                    <br></br>
+                    <br></br>
+
+                    The code for this project is available for download <a href="https://github.com/tehzwen/OpencvRockPaperScissors">here</a>.
                     </p></div>}
                 />
                 <iframe width="1280" height="720" src="https://www.youtube.com/embed/zv2W0okyiHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

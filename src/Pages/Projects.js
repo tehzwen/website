@@ -35,6 +35,7 @@ class Projects extends Component {
                 <ProjectBlock title="Appraisale Mobile App" imageName="appraisaleLogo.png" />
                 <ProjectBlock title="OpenCV Rock Paper Scissors" />
                 <ProjectBlock title="C UDP Programming" />
+                <ProjectBlock title="Discord Bot" imageName="discordLogo.jpg"  />
             </div>
         )
     }
