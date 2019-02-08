@@ -3,6 +3,11 @@ import ProjectBlock from '../Components/ProjectBlock';
 import Carousel from 'react-bootstrap/lib/Carousel';
 
 class Projects extends Component {
+
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
+
     render() {
         return (
 

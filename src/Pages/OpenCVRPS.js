@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import ProjectPage from '../Components/ProjectPage';
 
 class RPS extends Component {
+
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
+
     render(){
         return(
             <div>

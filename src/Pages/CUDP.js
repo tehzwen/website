@@ -6,6 +6,10 @@ class CUDP extends React.Component {
         super(props);
     }
 
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
+
     render(){
         return(
             <div>

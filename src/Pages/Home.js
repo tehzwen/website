@@ -10,6 +10,9 @@ class Home extends React.Component {
 
         this.handleButtonPress = this.handleButtonPress.bind(this);
     }
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
 
 
     handleButtonPress(){
