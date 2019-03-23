@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Link, Redirect, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class ProjectBlock extends Component {
     constructor(props) {
@@ -48,6 +48,7 @@ class ProjectBlock extends Component {
         return (
             <div className="ProjectContainer" onClick={this.goToLink}>
                 <img
+                    alt={"not found"}
                     className="ProjectImage"
                     src={this.state.imageString}>
                 </img>

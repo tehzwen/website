@@ -1,7 +1,7 @@
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
 import Button from 'react-bootstrap/lib/Button';
-import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
-import React, { Component } from 'react';
+import { BrowserRouter as Router, Redirect } from "react-router-dom";
+import React from 'react';
 
 class Home extends React.Component {
     constructor(props){
@@ -28,7 +28,7 @@ class Home extends React.Component {
             }
             return(
             <Router>
-                <div style={{ 'position': 'relative', 'justify-content': 'center', 'height': '100vh' }}>
+                <div style={{ 'position': 'relative', 'justifyContent': 'center', 'height': '100vh' }}>
                     <Jumbotron className="HomeJumboTron" >
                         <h1>Hello, my name is <b>Zachary Shaw</b></h1>
                         <p>

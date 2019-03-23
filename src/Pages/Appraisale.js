@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProjectPage from '../Components/ProjectPage';
 
 class Appraisale extends React.Component {
-    constructor(props){
-        super(props);
-    }
-
     componentDidMount(){
         window.scrollTo(0,0);
     }
@@ -33,9 +29,9 @@ class Appraisale extends React.Component {
                     how I did certain things in the app feel free to email me and I'd be happy to help.
                     </p></div>}
                 />
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/mzflvDXl5lE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/pDTPLMz6f7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/RAdV3-gh3bQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="1" width="1280" height="720" src="https://www.youtube.com/embed/mzflvDXl5lE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="2" width="1280" height="720" src="https://www.youtube.com/embed/pDTPLMz6f7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="3" width="1280" height="720" src="https://www.youtube.com/embed/RAdV3-gh3bQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         )
     }

@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProjectPage from '../Components/ProjectPage';
 
 class CUDP extends React.Component {
-    constructor(props){
-        super(props);
-    }
 
     componentDidMount(){
         window.scrollTo(0,0);
@@ -48,7 +45,7 @@ class CUDP extends React.Component {
                     The code for this project is available for download <a href="https://github.com/tehzwen/Project-CGOD">here</a>.
                     </p></div>}
                 />
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/AzHy3kCW4f8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="hackathon" width="1280" height="720" src="https://www.youtube.com/embed/AzHy3kCW4f8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         )
     }

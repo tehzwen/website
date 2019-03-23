@@ -49,7 +49,7 @@ class RPS extends Component {
                     The code for this project is available for download <a href="https://github.com/tehzwen/OpencvRockPaperScissors">here</a>.
                     </p></div>}
                 />
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/zv2W0okyiHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="rps" width="1280" height="720" src="https://www.youtube.com/embed/zv2W0okyiHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         )
     }

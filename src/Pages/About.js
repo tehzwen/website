@@ -12,7 +12,7 @@ class About extends Component {
 
             <div>
                 <h1 className="AboutTitle">About me</h1>
-                <img className="ZachPic" width="250" height="250" src={require('../Resources/selfie.jpg')} />
+                <img className="ZachPic" width="250" height="250" src={require('../Resources/selfie.jpg')} alt={"not found"} />
                 <br></br>
                 <text className="AboutText">My name is Zachary Shaw and I'm a full time student
                     pursuing a career in Computer Science.</text>

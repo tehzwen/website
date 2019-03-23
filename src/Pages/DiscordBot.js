@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProjectPage from '../Components/ProjectPage';
 
 class DiscordBot extends React.Component {
-    constructor(props){
-        super(props);
-    }
 
     componentDidMount(){
         window.scrollTo(0,0);
@@ -35,11 +32,11 @@ class DiscordBot extends React.Component {
                     what else could be added.
                     </p></div>}
                 />
-                <img className="DiscordImage"  src={require('../Resources/discordBot1.png')} />
-                <img className="DiscordImage"  src={require('../Resources/discordBot2.png')} />
-                <img className="DiscordImage"  src={require('../Resources/discordBot3.png')} />
-                <img className="DiscordImage"  src={require('../Resources/discordBot4.png')} />
-                <img className="DiscordImage"  src={require('../Resources/discordBot5.png')} />
+                <img className="DiscordImage"  src={require('../Resources/discordBot1.png')} alt={"not found"} />
+                <img className="DiscordImage"  src={require('../Resources/discordBot2.png')} alt={"not found"} />
+                <img className="DiscordImage"  src={require('../Resources/discordBot3.png')} alt={"not found"} />
+                <img className="DiscordImage"  src={require('../Resources/discordBot4.png')} alt={"not found"} />
+                <img className="DiscordImage"  src={require('../Resources/discordBot5.png')} alt={"not found"} />
 
             </div>
         )
