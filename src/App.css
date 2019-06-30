@@ -12,33 +12,13 @@
 }
 
 .App {
-  text-align: center;
   background:linear-gradient(rgba(0,0,0,0.5),transparent);
   height:100%;
-
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
   color: #61dafb;
 }
-
-
 
 .carousel-indicators li{
   border-radius: 50% !important;
@@ -64,10 +44,15 @@
 
 .Footer-div{
   padding-top: 100px;
+  text-align: center;
 }
 
 .FooterText{
   font-family: "Nanum Gothic";
+}
+
+.GridRow p{
+  font-family: "Nanum Gothic" !important;
 }
 
 .Headerlink{
@@ -76,10 +61,13 @@
   margin-left: 5vh;
   padding-top: 5vh;
   font-size: 24px;
-  font-family: "Nanum Gothic";
   text-decoration: none;
   color: black;
   outline: 0;
+}
+
+.Headerlink Header{
+  font-family: "Nanum Gothic" !important;
 }
 
 .Headerlink:hover{
@@ -90,11 +78,8 @@
 }
 
 .HomeJumboTron {
-  font-family: 'Nanum Gothic';
+  font-family: 'Nanum Gothic' !important;
   background-color : #8a838300 !important ;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .Projects-blocks-div {
@@ -125,7 +110,7 @@
   margin-top: 10px;
   width: 80%;
   justify-self: center;
-  background-color: #5ad4d8;
+  background-color: #44e3e970;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -178,10 +163,7 @@
 
 .Siteheader{
   background:linear-gradient(#27a4a8,transparent);
-  display: flex;
-  min-height: 18vh;
-  justify-content: center;
-  width: 100%;
+  margin-bottom: 50px;
 }
 
 .Siteheader-container {

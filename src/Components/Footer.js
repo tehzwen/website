@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
+import { Grid } from 'semantic-ui-react';
 
 class Footer extends Component {
 
-    render(){
-        return(
-            <div className="Footer-div">
-                <p className="FooterText"><b>Zachary Shaw</b></p>
-                <p className="FooterText">Ⓒ	Copyright 2018-2019</p>
-                <p className="FooterText"><i>All rights reserved.</i></p>
-            </div>
+    render() {
+        return (
+            <Grid.Row className="Footer-div">
+                <Grid.Column>
+                    <p className="FooterText"><b>Zachary Shaw</b></p>
+                    <p className="FooterText">Ⓒ	Copyright 2018-2019</p>
+                    <p className="FooterText"><i>All rights reserved.</i></p>
+                </Grid.Column>
+            </Grid.Row>
         )
     }
 
