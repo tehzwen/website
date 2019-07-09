@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import ProjectPage from '../Components/ProjectPage';
 
 
-class Tweet extends React.Component {
-    constructor(props){
-        super(props);
-
-    }
+class Tweet extends Component {
 
     componentWillMount(){
         window.scrollTo(0,0);

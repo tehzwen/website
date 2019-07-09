@@ -1,0 +1,28 @@
+{
+    "title": "Finished Capstone",
+    "date": "06-29-2019",
+    "subtitles": [
+        {
+            "title": "We made it!",
+            "index": 0
+        },
+        {
+            "title": "Conclusions",
+            "index": 1
+        }
+    ],
+    "content": [
+        {
+            "parent": 0,
+            "text": "Finally finished my capstone with my group! It was a stressful day of having Nick look at the project as I found out that the one query I had written wasn't working. But I learned something cool because of it. Essentially I was running a query that was checking if the updated time of a certain entry was greater than 30 minutes past the current time. This worked super well on my machine here at home and for my group so what the hell, I pushed it. "
+        },
+        {
+            "parent": 0,
+            "text": "It turns out that Nick was running his PSQL server in a container that was running a different time zone than I was so when it would use the NOW in PSQL to compare against time being supplied from Go it would fail! :(. But the fix was easy, always use the programming language's time! That way instead of comparing it against NOW in PSQL you can just take the current time in whatever language you're using!"
+        },
+        {
+            "parent": 1,
+            "text": "Overall the project worked better than I had expected it to all things considered. Golang was interesting, awesome in some ways but a huge pain in others. I plan to expirement with it more in the future. Teamwork is never easy but the team did pretty well considering the short amount of time we had to work on the project."
+        }
+    ]
+}

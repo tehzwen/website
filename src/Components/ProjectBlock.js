@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink } from "react-router-dom";
+import { Grid } from 'semantic-ui-react';
 
 class ProjectBlock extends Component {
     constructor(props) {
@@ -24,14 +24,12 @@ class ProjectBlock extends Component {
         });
     }
 
-
     goToLink() {
         this.setState({
             toProjectPage: true
         });
 
     }
-
 
     componentWillMount() {
         if (this.props.imageName !== undefined) {
@@ -40,24 +38,27 @@ class ProjectBlock extends Component {
         else {
             this.contructTotalString("defaultProject.jpg");
         }
-
     }
 
     render() {
 
         return (
-            <div className="ProjectContainer" onClick={this.goToLink}>
-                <img
-                    alt={"not found"}
-                    className="ProjectImage"
-                    src={this.state.imageString}>
-                </img>
-                <NavLink className="ProjectTitle" to={this.state.titleLink}>{this.props.title}</NavLink>
-            </div>
+            <Grid textAlign="center">
+                <Grid.Row onClick={() => {this.props.history.push(this.state.titleLink)}} verticalAlign="middle" className="ProjectContainer">
+                    <Grid.Column width={4}>
+                        <img
+                            alt={"not found"}
+                            className="ProjectImage"
+                            src={this.state.imageString}>
+                        </img>
+                    </Grid.Column>
+                    <Grid.Column width={10}>
+                        <h2>{this.props.title}</h2>
+                    </Grid.Column>
+                </Grid.Row>
 
+            </Grid>
         )
-
-
     }
 }
 

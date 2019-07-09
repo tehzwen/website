@@ -11,11 +11,12 @@ class Projects extends Component {
 
     createProjectList(data) {
         return data.map((item) => {
-            return (<Components.ProjectBlock key={item.title + item.imageName} title={item.title} imageName={item.imageName} />)
+            return (<Components.ProjectBlock history={this.props.history} key={item.title + item.imageName} title={item.title} imageName={item.imageName} />)
         })
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0);
     }
 
     render() {
@@ -39,7 +40,7 @@ class Projects extends Component {
         ]
 
         return (
-            <Grid>
+            <Grid className="App">
                 <Components.MyHeader />
 
                 <Grid.Row style={{ height: '600px' }} textAlign='center'>

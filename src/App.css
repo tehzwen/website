@@ -3,7 +3,6 @@
 
 .AboutText{
   font-family: "Nanum Gothic";
-  text-align: left;
 }
 
 .AboutTitle{
@@ -13,11 +12,14 @@
 
 .App {
   background:linear-gradient(rgba(0,0,0,0.5),transparent);
-  height:100%;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.AppRow {
+  margin: 50px;
 }
 
 .carousel-indicators li{
@@ -39,7 +41,9 @@
 }
 
 .DiscordImage{
-  padding-bottom: 100px;
+  margin-bottom: 100px;
+  max-height: 1200px;
+  max-width: 1200px;
 }
 
 .Footer-div{
@@ -105,21 +109,18 @@
 }
 
 .ProjectContainer{
-  display:flex;
-  flex-direction: row;
-  margin-top: 10px;
-  width: 80%;
-  justify-self: center;
-  background-color: #44e3e970;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  border-radius: 15px;
+  background-color: #44e3e970 !important;
+  margin: 25px 325px; 
+}
+
+.ProjectContainer:hover{
+  opacity: 0.7;
+  cursor:pointer;
 }
 
 .ProjectImage{
-  height:10%;
-  width:10%;
+  height:100%;
+  width:100%;
 }
 
 .ProjectPageText{
@@ -134,10 +135,6 @@
 .ProjectPageTitle{
   font-family: 'Nanum Gothic';
   font-weight: bold;
-  margin-top: 5vh;
-  margin-left: 10vh;
-  margin-bottom: 2vh;
-  text-align: left;
 }
 
 .ProjectTitle{
@@ -151,14 +148,6 @@
   text-decoration: none;
   color: black;
   outline: 0;
-  
-}
-
-.ProjectTitle:hover{
-  color:black;
-  text-decoration: none;
-  cursor:pointer;
-  opacity: 0.2;
 }
 
 .Siteheader{
