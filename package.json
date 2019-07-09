@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tehzwen.com/",
+  "homepage": "https://tehzwen.com/website/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "re-carousel": "^2.3.1",
