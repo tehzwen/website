@@ -11,7 +11,7 @@ class MyHeader extends Component {
     render() {
         return (
             <Grid.Row className="Siteheader" centered columns={'equal'}>
-                <Grid.Column width={2} className="Headerlink" as={Link} to="/">
+                <Grid.Column width={2} className="Headerlink" as={Link} to="/website">
                     <center>
                         <Header as="h3">Home</Header>
                     </center>

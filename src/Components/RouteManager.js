@@ -14,7 +14,7 @@ export class RouteManager extends Component {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/" render={(routeProps) => (<Screens.Home {...routeProps} />)} />
+                    <Route exact path="/website" render={(routeProps) => (<Screens.Home {...routeProps} />)} />
                     <Route exact path="/blog" render={(routeProps) => (<Screens.Blog {...routeProps} />)} />
                     <Route exact path="/projects/" render={(routeProps) => (<Screens.Projects {...routeProps} />)} />
                     <Route exact path="/opencvrockpaperscissors/" render={(routeProps) => (<Screens.RPS {...routeProps} />)} />
