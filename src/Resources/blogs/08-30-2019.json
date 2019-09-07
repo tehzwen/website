@@ -1,0 +1,68 @@
+{
+    "title": "Internship at Method1 Software",
+    "date": "08-30-2019",
+    "subtitles": [
+        {
+            "title": "What a ride!",
+            "index": 0
+        },
+        {
+            "title": "Familiar Tech, New Ideas",
+            "index": 1
+        },
+        {
+            "title": "State Control",
+            "index": 2
+        },
+        {
+            "title": "What did I learn?",
+            "index": 3
+        }
+    ],
+    "content": [
+        {
+            "parent": 0,
+            "text": "I started as a software developer intern at Method1 Software here in Edmonton in April and I just finished working there! First I'd like to just say how much of an awesome time it was to work there. In addition to having a wonderful supervisor I had the priveledge to work with two other grads from my university."
+        },
+        {
+            "parent": 1,
+            "text": "When I started I was working on some react native stuff which was pretty fun but quickly I was introduced to the company's framework. It used many things I'm used to already (React, SQL, Redux, Node, etc) but was using them in ways I had never thought of."
+        },
+        {
+            "parent": 1,
+            "text": "I learned very quickly this idea of writing a file in real-time, the idea that as one manipulates some code, you can use fs (javascripts filesystem utility) to write a file and make changes on the fly. The idea was very interesting and intrigued me! The benefits of this were that we were able to create backend routes, save them and then have them instantly available! All the while each route would be nicely wrapped in a promise and allow recovery in the case of a crash."
+        },
+        {
+            "parent": 1,
+            "text": "The other side of this technology is that in order for these routes to be used quickly by the team, they were stored in a SQL database that we were all connected to. This allowed for a really nice flow of quick changes to any backend routes which would update quickly for the team to use without much fuss. Like any innovation there are certain drawbacks to this approach, one obvious drawback was source control. While being able to see a change instantly and use it was super super handy, it came at the cost of not being able to roll back to an old version of the route. Instead full backups of databases were required to keep track of such changes. The framework is still in somewhat of its infancy and once this is figured out it will be a great benefit."
+        },
+        {
+            "parent": 2,
+            "text": "Ever since I first learned React I have been a huge fan of the built in state control of React. Being able to update it and manipulate it on the fly is huge for me. As I learned more and more I heard about this library called Redux. Before working here I had a small amount of exposure to Redux as most of the apps I had worked on had no use for a global state manager. The framework at Method1 was heavily based on Redux for the reason of holding information required for posting to the API in a nicely organized way."
+        },
+        {
+            "parent": 2,
+            "text": "The good part of this approach was that every detail of the app was mapped in a similar structure thus making access to state very simple, parent->area->child->subchildren. It was a very unique way of thinking and something I think is valuable. Having a similar structure on each page means that no matter what you're looking for in state it will be in the same format which is fantastic. Each of the components built for the frontend of the framework had its actions mapped to use Redux state (ie. When a button is pressed it changes a state value in Redux to make an action occur)."
+        },
+        {
+            "parent": 2,
+            "text": "For certain components this worked great, but at the same time I will admit that this use of Redux was the single most annoying part of the framework. Don't get me wrong, I think Redux has its place and does some things very very well, but in certain situations (ie. inputting values into a textbox) it would lag and cause really poor performance. In my opinion I think that there wasn't a need for this excessive use of Redux. Holding important values in Redux is a great way of centralizing those values for quick and easy use but overloading Redux to replace React's already beautiful state management was not something I was too fond of."
+        },
+        {
+            "parent": 3,
+            "text": "Overall the entire time I was there I learned so much. At first it was simple things like how do I properly use promises to make my application perform actions in the order which I expect them to. I also learned how to use Redux, SQL and Node quite well. Aside from the technical things I learned, some of the most important things I learned were how to ask for help, how to listen better and how to find answers. When I started my supervisor would ask me to do tasks that I found quite difficult at first glance. But having a supervisor that trusted me and was confident in my ability was really nice and pushed me to learn new things."
+        },
+        {
+            "parent": 3,
+            "link": 1,
+            "text": "Again just a huge thanks to Method1 for being a fantastic, respectful and fun place to work. If you're ever looking for great enterprise software solutions go check them out $link"
+        }
+    ],
+    "links": [
+        {
+            "id": 1,
+            "linkref": "http://method1software.com/",
+            "linktext": "here."
+        }
+    ]
+}
