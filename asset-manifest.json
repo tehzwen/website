@@ -1,7 +1,7 @@
 {
   "main.css": "/website/static/css/main.7b79662e.chunk.css",
-  "main.js": "/website/static/js/main.1c4d23bd.chunk.js",
-  "main.js.map": "/website/static/js/main.1c4d23bd.chunk.js.map",
+  "main.js": "/website/static/js/main.585f681a.chunk.js",
+  "main.js.map": "/website/static/js/main.585f681a.chunk.js.map",
   "static/js/1.e4868483.chunk.js": "/website/static/js/1.e4868483.chunk.js",
   "static/js/1.e4868483.chunk.js.map": "/website/static/js/1.e4868483.chunk.js.map",
   "runtime~main.js": "/website/static/js/runtime~main.df8eefd1.js",
@@ -17,6 +17,6 @@
   "static/media/discordLogo.jpg": "/website/static/media/discordLogo.c7087c63.jpg",
   "static/css/main.7b79662e.chunk.css.map": "/website/static/css/main.7b79662e.chunk.css.map",
   "index.html": "/website/index.html",
-  "precache-manifest.9ff09b0544c40e315e6728ebd4d23d82.js": "/website/precache-manifest.9ff09b0544c40e315e6728ebd4d23d82.js",
+  "precache-manifest.f944dc4d2c434f42c9c18883811dedaf.js": "/website/precache-manifest.f944dc4d2c434f42c9c18883811dedaf.js",
   "service-worker.js": "/website/service-worker.js"
 }

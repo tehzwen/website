@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "1c4d23bd31fa59374484",
+    "revision": "585f681aa62c6fd7139b",
     "url": "/website/static/css/main.7b79662e.chunk.css"
   },
   {
-    "revision": "1c4d23bd31fa59374484",
-    "url": "/website/static/js/main.1c4d23bd.chunk.js"
+    "revision": "585f681aa62c6fd7139b",
+    "url": "/website/static/js/main.585f681a.chunk.js"
   },
   {
     "revision": "e486848307decf96e20d",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/website/static/media/discordLogo.c7087c63.jpg"
   },
   {
-    "revision": "dd49696b48a6cd66e059a4d2775e313f",
+    "revision": "beb791136810104f2a1f09f6ea967ba6",
     "url": "/website/index.html"
   }
 ];
