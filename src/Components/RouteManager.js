@@ -12,7 +12,7 @@ export class RouteManager extends Component {
 
     render() {
         return (
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route exact path="/website" render={(routeProps) => (<Screens.Home {...routeProps} />)} />
                     <Route exact path="/blog" render={(routeProps) => (<Screens.Blog {...routeProps} />)} />
