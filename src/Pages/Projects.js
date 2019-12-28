@@ -23,6 +23,10 @@ class Projects extends Component {
 
         const projectData = [
             {
+                title: "WebGL Work",
+                imageName: "glCubes.png"
+            },
+            {
                 title: "Appraisale Mobile App",
                 imageName: "appraisaleLogo.png"
 

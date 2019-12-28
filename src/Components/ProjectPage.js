@@ -18,11 +18,11 @@ class ProjectPage extends Component {
         return (
             <Grid className="App">
                 <Components.MyHeader />
-                <Grid.Row className="AppRow">
+                {this.props.title ? <Grid.Row className="AppRow">
                     <Grid.Column>
                         <h3 className="ProjectPageTitle">{this.props.title}</h3>
                     </Grid.Column>
-                </Grid.Row>
+                </Grid.Row> : null}
                 {this.props.description}
                 <Grid.Row className="AppRow">
                     <Grid.Column>

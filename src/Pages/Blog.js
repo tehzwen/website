@@ -18,7 +18,7 @@ class Blog extends Component {
 
     createBlogPosts() {
         blogPosts.sort((a, b) => {
-            return new Date(b.date) - new Date(a.date);
+            return new Date(b.date.split("-")) - new Date(a.date.split("-"));
         })
         this.setState({
             blogPosts: blogPosts
@@ -83,7 +83,7 @@ class Blog extends Component {
                         <center><h2>{this.state.blogPosts[index].title}</h2></center>
                     </Grid.Column>
                     <Grid.Column width={16}>
-                        <center><h4>{new Date(this.state.blogPosts[index].date).toDateString()}</h4></center>
+                        <center><h4>{new Date(this.state.blogPosts[index].date.split("-")).toDateString()}</h4></center>
                     </Grid.Column>
                 </Grid.Row>
                 {this.getSubtitleContentLayout(this.state.blogPosts[index])}

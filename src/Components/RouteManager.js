@@ -22,6 +22,7 @@ export class RouteManager extends Component {
                     <Route exact path="/appraisalemobileapp/" render={(routeProps) => (<Screens.Appraisale {...routeProps} />)} />
                     <Route exact path="/cudpprogramming/" render={(routeProps) => (<Screens.CUDP {...routeProps} />)} />
                     <Route exact path="/discordbot/" render={(routeProps) => (<Screens.DiscordBot {...routeProps} />)} />
+                    <Route exact path="/webglwork/" render={(routeProps) => (<Screens.WebGL {...routeProps} />)} />
                 </Switch>
             </BrowserRouter>
         );
