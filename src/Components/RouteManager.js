@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Screens from '../Pages/index.js';
 
 export class RouteManager extends Component {
@@ -12,19 +12,20 @@ export class RouteManager extends Component {
 
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter basename="/">
                 <Switch>
-                    <Route exact path="/website" render={(routeProps) => (<Screens.Home {...routeProps} />)} />
-                    <Route exact path="/blog" render={(routeProps) => (<Screens.Blog {...routeProps} />)} />
-                    <Route exact path="/projects/" render={(routeProps) => (<Screens.Projects {...routeProps} />)} />
-                    <Route exact path="/opencvrockpaperscissors/" render={(routeProps) => (<Screens.RPS {...routeProps} />)} />
-                    <Route exact path="/about/" render={(routeProps) => (<Screens.About {...routeProps} />)} />
-                    <Route exact path="/appraisalemobileapp/" render={(routeProps) => (<Screens.Appraisale {...routeProps} />)} />
-                    <Route exact path="/cudpprogramming/" render={(routeProps) => (<Screens.CUDP {...routeProps} />)} />
-                    <Route exact path="/discordbot/" render={(routeProps) => (<Screens.DiscordBot {...routeProps} />)} />
-                    <Route exact path="/webglwork/" render={(routeProps) => (<Screens.WebGL {...routeProps} />)} />
+                    <Route exact path="/" render={() => { return <Redirect to="/home" /> }} />
+                    <Route path="/home" render={(routeProps) => (<Screens.Home {...routeProps} />)} />
+                    <Route path="/blog/" render={(routeProps) => (<Screens.Blog {...routeProps} />)} />
+                    <Route path="/projects/" render={(routeProps) => (<Screens.Projects {...routeProps} />)} />
+                    <Route path="/opencvrockpaperscissors/" render={(routeProps) => (<Screens.RPS {...routeProps} />)} />
+                    <Route path="/about/" render={(routeProps) => (<Screens.About {...routeProps} />)} />
+                    <Route path="/appraisalemobileapp/" render={(routeProps) => (<Screens.Appraisale {...routeProps} />)} />
+                    <Route path="/cudpprogramming/" render={(routeProps) => (<Screens.CUDP {...routeProps} />)} />
+                    <Route path="/discordbot/" render={(routeProps) => (<Screens.DiscordBot {...routeProps} />)} />
+                    <Route path="/webglwork/" render={(routeProps) => (<Screens.WebGL {...routeProps} />)} />
                 </Switch>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 }

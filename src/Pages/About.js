@@ -27,7 +27,7 @@ class About extends Component {
                                 <br />
                                 <br />
                                 The purpose of this website is to showcase projects I've made which are all available
-                                <a className="AboutText" href="https://github.com/tehzwen"> here</a> as well
+                                <a className="AboutText" href="https://github.com/tehzwen" target="_blank"> here</a> as well
                                 as under the projects tab on this site. I love working with passionate people
                                 on exciting projects. Inquiries can be sent to zachthm@gmail.com.
                                 <br />
