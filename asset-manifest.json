@@ -1,9 +1,9 @@
 {
   "main.css": "/website/static/css/main.5b4cd2f0.chunk.css",
-  "main.js": "/website/static/js/main.e7cb3a0e.chunk.js",
-  "main.js.map": "/website/static/js/main.e7cb3a0e.chunk.js.map",
-  "static/js/1.909a3aa9.chunk.js": "/website/static/js/1.909a3aa9.chunk.js",
-  "static/js/1.909a3aa9.chunk.js.map": "/website/static/js/1.909a3aa9.chunk.js.map",
+  "main.js": "/website/static/js/main.4f9cc34a.chunk.js",
+  "main.js.map": "/website/static/js/main.4f9cc34a.chunk.js.map",
+  "static/js/1.4f9e6e3d.chunk.js": "/website/static/js/1.4f9e6e3d.chunk.js",
+  "static/js/1.4f9e6e3d.chunk.js.map": "/website/static/js/1.4f9e6e3d.chunk.js.map",
   "runtime~main.js": "/website/static/js/runtime~main.df8eefd1.js",
   "runtime~main.js.map": "/website/static/js/runtime~main.df8eefd1.js.map",
   "static/media/discordBot1.png": "/website/static/media/discordBot1.e88f3d01.png",
@@ -18,6 +18,6 @@
   "static/media/glCubes.png": "/website/static/media/glCubes.b6113906.png",
   "static/css/main.5b4cd2f0.chunk.css.map": "/website/static/css/main.5b4cd2f0.chunk.css.map",
   "index.html": "/website/index.html",
-  "precache-manifest.1cb7b7f4a782d652ac4ec7eedaa79fe0.js": "/website/precache-manifest.1cb7b7f4a782d652ac4ec7eedaa79fe0.js",
+  "precache-manifest.7f4e51744e4b85c76070ca84767b4d7a.js": "/website/precache-manifest.7f4e51744e4b85c76070ca84767b4d7a.js",
   "service-worker.js": "/website/service-worker.js"
 }
