@@ -1,0 +1,44 @@
+{
+    "title": "Finished My Degree and Got a Job!",
+    "date": "04-28-2020",
+    "subtitles": [
+        {
+            "title": "Getting a great job!",
+            "index": 0
+        },
+        {
+            "title": "Degree finished",
+            "index": 1
+        },
+        {
+            "title": "Graphics Capstone",
+            "index": 2
+        }
+    ],
+    "content": [
+        {
+            "parent": 0,
+            "text": "So around February I had been looking for work prior to graduating and so I had applied to a couple of places and had a few interviews. I will say that some places that I did great in the interview didn't result in a job and the place that I did end up getting a job at I'd say I didn't interview very well! I ended up getting a job as a DevOps Engineer at the Alberta Motor Association and am really happy! I worked part-time with them for the last couple of months and just recently went full-time. They're an amazing company who shows they care about their customers and about their employees and I'm getting to learn alot about cloud based infrastructure and how it all works."
+        },
+        {
+            "parent": 0,
+            "text": "With all the Covid-19 stuff that has been going on, I've been working from home recently which is definitely different than going into the office but I'm still happy to be able to contribute and help our people work from home and be productive."
+        },
+        {
+            "parent": 1,
+            "text": "I remember when I started my degree and how uncertain everything was with how long it would take and whether it would be worth it or not. I can say I'm happy that I stuck with it and finished. The degree itself didn't feel overly difficult but the things that came in life during the time were certainly challenging. I'm thankful for my friends, the professors and the university itself for the experience I had there. It's slightly bitter sweet with not being able to convocate and celebrate like we normally would be able to due to the current situation in the world but not much we can do about it for now."
+        },
+        {
+            "link": 1,
+            "parent": 2,
+            "text": "As part of my last semester I completed a final capstone project involving OpenGL programming. I created a simple graphics rendering engine using Golang which came with a WebGL editor written in Electron for quick editing of scenes to then be rendered by the engine in Go. The project was a ton of fun and I really enjoyed working with Dana Cobzas at Macewan as well as learning lots about graphics. I plan on creating a project page on this site for it, in the meantime you can find the github repo $link"
+        }
+    ],
+    "links": [
+        {
+            "id": 1,
+            "linkref": "https://github.com/tehzwen/GoGL",
+            "linktext": "here."
+        }
+    ]
+}

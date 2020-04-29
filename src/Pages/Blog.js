@@ -41,9 +41,9 @@ class Blog extends Component {
     textGetLinks(text) {
         let link;
 
-        for (let i = 0; i < this.state.blogPosts[0].links.length; i++) {
-            if (this.state.blogPosts[0].links[i].id === text.link) {
-                link = this.state.blogPosts[0].links[i];
+        for (let i = 0; i < this.state.blogPosts[this.state.currentPage - 1].links.length; i++) {
+            if (this.state.blogPosts[this.state.currentPage - 1].links[i].id === text.link) {
+                link = this.state.blogPosts[this.state.currentPage - 1].links[i];
             }
         }
         let index = text.text.indexOf('$link');
