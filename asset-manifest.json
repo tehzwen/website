@@ -1,9 +1,9 @@
 {
-  "main.css": "/website/static/css/main.5b4cd2f0.chunk.css",
-  "main.js": "/website/static/js/main.f9a77e25.chunk.js",
-  "main.js.map": "/website/static/js/main.f9a77e25.chunk.js.map",
-  "static/js/1.4f9e6e3d.chunk.js": "/website/static/js/1.4f9e6e3d.chunk.js",
-  "static/js/1.4f9e6e3d.chunk.js.map": "/website/static/js/1.4f9e6e3d.chunk.js.map",
+  "main.css": "/website/static/css/main.96bd765e.chunk.css",
+  "main.js": "/website/static/js/main.104eb248.chunk.js",
+  "main.js.map": "/website/static/js/main.104eb248.chunk.js.map",
+  "static/js/1.016b562c.chunk.js": "/website/static/js/1.016b562c.chunk.js",
+  "static/js/1.016b562c.chunk.js.map": "/website/static/js/1.016b562c.chunk.js.map",
   "runtime~main.js": "/website/static/js/runtime~main.df8eefd1.js",
   "runtime~main.js.map": "/website/static/js/runtime~main.df8eefd1.js.map",
   "static/media/discordBot1.png": "/website/static/media/discordBot1.e88f3d01.png",
@@ -16,8 +16,8 @@
   "static/media/defaultProject.jpg": "/website/static/media/defaultProject.aa60b576.jpg",
   "static/media/discordLogo.jpg": "/website/static/media/discordLogo.c7087c63.jpg",
   "static/media/glCubes.png": "/website/static/media/glCubes.b6113906.png",
-  "static/css/main.5b4cd2f0.chunk.css.map": "/website/static/css/main.5b4cd2f0.chunk.css.map",
+  "static/css/main.96bd765e.chunk.css.map": "/website/static/css/main.96bd765e.chunk.css.map",
   "index.html": "/website/index.html",
-  "precache-manifest.6b0e4ff7f250b69b84db1fa0f09a41d3.js": "/website/precache-manifest.6b0e4ff7f250b69b84db1fa0f09a41d3.js",
+  "precache-manifest.058b91d33d50d10c2b9d48fd34d0dbd1.js": "/website/precache-manifest.058b91d33d50d10c2b9d48fd34d0dbd1.js",
   "service-worker.js": "/website/service-worker.js"
 }
