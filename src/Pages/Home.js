@@ -7,6 +7,9 @@ class Home extends React.Component {
     render() {
         return (
             <Grid centered className="App">
+                <Components.AnnouncementHeader
+                    color={"#e6930e"}
+                    announcement={<h4>My new site (Construction Yard) is live now! Check it out <a href="http://constructionyard.ca/#/refinery">here!</a></h4>} />
                 <Components.MyHeader />
                 <Grid.Row className="GridRow" columns={'equal'} textAlign={"center"} style={{ marginTop: "250px", marginBottom: "250px" }}>
                     <Grid.Column width={10}>

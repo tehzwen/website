@@ -11,14 +11,16 @@ class About extends Component {
 
     render() {
         return (
-
             <Grid centered className="App">
+                <Components.AnnouncementHeader
+                    color={"#e6930e"}
+                    announcement={<h4>My new site (Construction Yard) is live now! Check it out <a href="http://constructionyard.ca/#/refinery">here!</a></h4>} />
                 <Components.MyHeader />
                 <Grid.Row className="GridRow" columns={'equal'} textAlign={"center"} style={{ marginBottom: "250px" }}>
                     <Grid.Column width={6}>
                         <center>
                             <h1 className="AboutTitle">About me</h1>
-                            <Image size="small" rounded style={{marginBottom:'25px'}} src={require('../Resources/selfie.jpg')} alt={"not found"} />
+                            <Image size="small" rounded style={{ marginBottom: '25px' }} src={require('../Resources/selfie.jpg')} alt={"not found"} />
                             <p className="AboutText">
                                 My name is Zachary Shaw and I'm a full time student
                                 pursuing a career in Computer Science.
@@ -44,8 +46,6 @@ class About extends Component {
             </Grid>
         )
     }
-
-
 }
 
 export default About;

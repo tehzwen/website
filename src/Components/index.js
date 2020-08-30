@@ -5,8 +5,10 @@ import ProjectPage from './ProjectPage';
 import RouteManager from './RouteManager';
 import Buttons from './Buttons'; 
 import IndicatorDots from './IndicatorDots';
+import AnnouncementHeader from './AnnouncementHeader';
 
 const Components = {
+    AnnouncementHeader,
     Footer,
     MyHeader,
     ProjectBlock,

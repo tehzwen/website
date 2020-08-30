@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Components from '../Components/index';
-import { Grid, Pagination, Transition } from 'semantic-ui-react';
+import { Grid, Pagination, Transition, Image } from 'semantic-ui-react';
 import blogPosts from '../Resources/blogs/index';
 
 class Blog extends Component {
@@ -51,28 +51,41 @@ class Blog extends Component {
     }
 
     getSubtitleContentLayout(post) {
-        let overallArr = [];
-        post.subtitles.map((subtitle, index) => {
-            overallArr.push(
-                <Grid.Row key={index + "subtitle"} className="AppRow">
-                    <Grid.Column style={{ marginBottom: '10px' }} width={16}>
-                        <h3>{subtitle.title}</h3>
-                    </Grid.Column>
-                    {post.content.map((text) => {
-                        if (text.parent === subtitle.index) {
-                            return (
-                                <Grid.Column style={{ marginBottom: '5px' }} key={"text" + text.text.length} width={16}>
-                                    {text.link ? this.textGetLinks(text) : <p>{text.text}</p>}
-                                </Grid.Column>
-                            )
-                        } else {
-                            return null;
-                        }
-                    })}
-                </Grid.Row>)
-            return index;
-        })
-        return overallArr;
+        if (post.subtitles && post.subtitles.length > 0) {
+            return post.subtitles.map((subtitle, index) => {
+                return (
+                    <Grid.Row key={index + "subtitle"} className="AppRow">
+                        <Grid.Column style={{ marginBottom: '10px' }} width={16}>
+                            <h3>{subtitle.title}</h3>
+                        </Grid.Column>
+                        {post.content.map((text) => {
+                            if (text.parent === subtitle.index) {
+                                return (
+                                    <Grid.Column style={{ marginBottom: '5px' }} key={"text" + text.text.length} width={16}>
+                                        {text.link ? this.textGetLinks(text) : <p>{text.text}</p>}
+                                    </Grid.Column>
+                                )
+                            } else {
+                                return null;
+                            }
+                        })}
+                    </Grid.Row>)
+            })
+        }
+    }
+
+    getImageContentLayout(post) {
+        if (post.images && post.images.length > 0) {
+            return post.images.map((image, index) => {
+                return (
+                    <Grid.Row key={image.id} style={{ marginTop: "25px" }}>
+                        <Grid.Column width={16}>
+                            <center><Image src={require("../Resources/" + image.imageRef)} width={image.width} height={image.height} /></center>
+                        </Grid.Column>
+                    </Grid.Row>
+                )
+            })
+        }
     }
 
     renderCurrentBlog(index) {
@@ -87,6 +100,7 @@ class Blog extends Component {
                     </Grid.Column>
                 </Grid.Row>
                 {this.getSubtitleContentLayout(this.state.blogPosts[index])}
+                {this.getImageContentLayout(this.state.blogPosts[index])}
             </Grid>
         )
         return pageLayout;
@@ -104,10 +118,12 @@ class Blog extends Component {
         if (this.state.blogPosts && this.state.blogPosts.length > 0) {
             return (
                 <Grid centered className="App">
+                    <Components.AnnouncementHeader
+                        color={"#e6930e"}
+                        announcement={<h4>My new site (Construction Yard) is live now! Check it out <a href="http://constructionyard.ca/#/refinery">here!</a></h4>} />
                     <Components.MyHeader />
                     <Transition visible={this.state.loadAnimationVisible} animation="fade" duration={300}>
                         <Grid centered>
-
                             <Grid.Row className="GridRow" columns={'equal'} textAlign={"center"} style={{ marginBottom: "200px" }}>
                                 <Grid.Column>
                                     {this.renderCurrentBlog(this.state.currentPage - 1)}

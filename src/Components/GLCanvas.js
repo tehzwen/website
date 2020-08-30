@@ -423,7 +423,6 @@ export default class GLCanvas extends Component {
     }
 
     setup() {
-        console.log("Setting up canvas");
         let programInfo = this.initializeShaderProgram(this.state.gl);
 
         let objects = [];
