@@ -8,7 +8,7 @@ class Footer extends Component {
             <Grid.Row className="Footer-div">
                 <Grid.Column>
                     <p className="FooterText"><b>Zachary Shaw</b></p>
-                    <p className="FooterText">Ⓒ	Copyright 2018-2020</p>
+                    <p className="FooterText">Ⓒ	Copyright 2018-2021</p>
                     <p className="FooterText"><i>All rights reserved.</i></p>
                 </Grid.Column>
             </Grid.Row>

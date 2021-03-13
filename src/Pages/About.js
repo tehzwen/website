@@ -22,8 +22,7 @@ class About extends Component {
                             <h1 className="AboutTitle">About me</h1>
                             <Image size="small" rounded style={{ marginBottom: '25px' }} src={require('../Resources/selfie.jpg')} alt={"not found"} />
                             <p className="AboutText">
-                                My name is Zachary Shaw and I'm a full time student
-                                pursuing a career in Computer Science.
+                                My name is Zachary Shaw and I'm a full time software developer from Alberta Canada.
                                 I love to program and am constantly working on new projects that help solve
                                 everyday problems and make life a little easier for myself and those around me.
                                 <br />

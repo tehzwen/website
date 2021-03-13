@@ -15,8 +15,8 @@ class Home extends React.Component {
                     <Grid.Column width={10}>
                         <Header className="HomeJumboTron" as="h1">Hello, my name is <b>Zachary Shaw</b></Header>
                         <p>
-                            I'm a Canadian Computer Science student who loves making
-                            software that solves problems
+                            I'm a software developer who loves making
+                            things that solve problems
                         </p>
                         <Button color="teal" onClick={() => this.props.history.push('/projects/')}>Learn more</Button>
                     </Grid.Column>

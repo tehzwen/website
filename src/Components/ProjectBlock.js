@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid } from 'semantic-ui-react';
+import { Grid, Image } from 'semantic-ui-react';
 
 class ProjectBlock extends Component {
     constructor(props) {
@@ -46,11 +46,10 @@ class ProjectBlock extends Component {
             <Grid textAlign="center">
                 <Grid.Row onClick={() => {this.props.history.push(this.state.titleLink)}} verticalAlign="middle" className="ProjectContainer">
                     <Grid.Column width={4}>
-                        <img
+                        <Image
                             alt={"not found"}
-                            className="ProjectImage"
-                            src={this.state.imageString}>
-                        </img>
+                            size="tiny"
+                            src={this.state.imageString}/>
                     </Grid.Column>
                     <Grid.Column width={10}>
                         <h2>{this.props.title}</h2>

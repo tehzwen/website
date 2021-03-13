@@ -4,6 +4,7 @@ import internship from './08-30-2019.json';
 import graphicsSemester from './12-27-2019.json';
 import degreeOver from './04-28-2020.json';
 import constructionYard from './08-30-2020.json';
+import newPosition from './03-13-2021.json';
 
 let blogPosts = [
     constructionYard,
@@ -11,7 +12,8 @@ let blogPosts = [
     responsiveUpdate,
     internship,
     graphicsSemester,
-    degreeOver
+    degreeOver,
+    newPosition
 ]
 
 export default blogPosts;
