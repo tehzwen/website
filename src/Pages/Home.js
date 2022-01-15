@@ -1,12 +1,14 @@
 import { AnnouncementHeader, MyHeader, Footer, Boids } from '../Components/index';
 import { Grid, Header, Button } from 'semantic-ui-react';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
     const [currentString, setCurrentString] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentInfoStringIndex, setCurrentInfoStringIndex] = useState(0);
     const [addingString, setAddingString] = useState(true);
+    const navigate = useNavigate();
 
     const index = 0;
 
@@ -102,7 +104,7 @@ const Home = () => {
                         (<p><br /><br /></p>)
                     }
 
-                    <Button color="teal" onClick={() => this.props.history.push('/projects/')}>Learn more</Button>
+                    <Button color="teal" onClick={() => navigate('/projects/')}>Learn more</Button>
                 </Grid.Column>
             </Grid.Row>
             <Grid.Row>
