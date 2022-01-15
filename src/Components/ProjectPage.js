@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Components from '../Components/index';
+import { MyHeader, Footer} from '../Components/index';
 import { Grid } from 'semantic-ui-react';
 
 class ProjectPage extends Component {
@@ -17,7 +17,7 @@ class ProjectPage extends Component {
     render() {
         return (
             <Grid className="App">
-                <Components.MyHeader />
+                <MyHeader />
                 {this.props.title ? <Grid.Row className="AppRow">
                     <Grid.Column>
                         <h3 className="ProjectPageTitle">{this.props.title}</h3>
@@ -31,7 +31,7 @@ class ProjectPage extends Component {
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column>
-                        <Components.Footer />
+                        <Footer />
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

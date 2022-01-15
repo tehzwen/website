@@ -3,12 +3,14 @@ import MyHeader from './MyHeader';
 import ProjectBlock from './ProjectBlock';
 import ProjectPage from './ProjectPage';
 import RouteManager from './RouteManager';
-import Buttons from './Buttons'; 
+import Buttons from './Buttons';
 import IndicatorDots from './IndicatorDots';
 import AnnouncementHeader from './AnnouncementHeader';
+import { Boids } from './Boids';
 
-const Components = {
+export {
     AnnouncementHeader,
+    Boids,
     Footer,
     MyHeader,
     ProjectBlock,
@@ -17,5 +19,3 @@ const Components = {
     Buttons,
     IndicatorDots
 }
-
-export default Components;

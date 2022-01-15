@@ -375,50 +375,48 @@ export default class GLCanvas extends Component {
         gl.useProgram(programInfo.program)
 
         objects.forEach((object) => {
-            {
-                mat4.rotateY(object.rotation, object.rotation, deltaTime);
-                mat4.rotateX(object.rotation, object.rotation, deltaTime);
-                mat4.rotateZ(object.rotation, object.rotation, deltaTime);
+            mat4.rotateY(object.rotation, object.rotation, deltaTime);
+            mat4.rotateX(object.rotation, object.rotation, deltaTime);
+            mat4.rotateZ(object.rotation, object.rotation, deltaTime);
 
-                var projectionMatrix = mat4.create();
-                var fovy = 60.0 * Math.PI / 180.0; // Vertical field of view in radians
-                var aspect = this.state.canvas.clientWidth / this.state.canvas.clientHeight; // Aspect ratio of the canvas
-                var near = 0.1; // Near clipping plane
-                var far = 100.0; // Far clipping plane
+            var projectionMatrix = mat4.create();
+            var fovy = 60.0 * Math.PI / 180.0; // Vertical field of view in radians
+            var aspect = this.state.canvas.clientWidth / this.state.canvas.clientHeight; // Aspect ratio of the canvas
+            var near = 0.1; // Near clipping plane
+            var far = 100.0; // Far clipping plane
 
-                mat4.perspective(projectionMatrix, fovy, aspect, near, far);
+            mat4.perspective(projectionMatrix, fovy, aspect, near, far);
 
-                gl.uniformMatrix4fv(programInfo.uniformLocations.projection, false, projectionMatrix);
-                var viewMatrix = mat4.create();
-                mat4.lookAt(
-                    viewMatrix,
-                    this.state.camera.position,
-                    this.state.camera.center,
-                    this.state.camera.up,
-                );
+            gl.uniformMatrix4fv(programInfo.uniformLocations.projection, false, projectionMatrix);
+            var viewMatrix = mat4.create();
+            mat4.lookAt(
+                viewMatrix,
+                this.state.camera.position,
+                this.state.camera.center,
+                this.state.camera.up,
+            );
 
-                gl.uniformMatrix4fv(programInfo.uniformLocations.view, false, viewMatrix);
-                var modelMatrix = mat4.create();
+            gl.uniformMatrix4fv(programInfo.uniformLocations.view, false, viewMatrix);
+            var modelMatrix = mat4.create();
 
-                var negCentroid = vec3.fromValues(0.0, 0.0, 0.0);
-                vec3.negate(negCentroid, object.centroid);
+            var negCentroid = vec3.fromValues(0.0, 0.0, 0.0);
+            vec3.negate(negCentroid, object.centroid);
 
-                mat4.translate(modelMatrix, modelMatrix, object.position);
-                mat4.translate(modelMatrix, modelMatrix, object.centroid);
-                mat4.mul(modelMatrix, modelMatrix, object.rotation);
-                
-                mat4.scale(modelMatrix, modelMatrix, object.scale);
-                mat4.translate(modelMatrix, modelMatrix, negCentroid);
+            mat4.translate(modelMatrix, modelMatrix, object.position);
+            mat4.translate(modelMatrix, modelMatrix, object.centroid);
+            mat4.mul(modelMatrix, modelMatrix, object.rotation);
 
-                gl.uniformMatrix4fv(programInfo.uniformLocations.model, false, modelMatrix);
-                gl.bindVertexArray(object.buffers.vao);
+            mat4.scale(modelMatrix, modelMatrix, object.scale);
+            mat4.translate(modelMatrix, modelMatrix, negCentroid);
 
-                // Draw the object
-                const offset = 0; // Number of elements to skip before starting
+            gl.uniformMatrix4fv(programInfo.uniformLocations.model, false, modelMatrix);
+            gl.bindVertexArray(object.buffers.vao);
 
-                //if its a mesh then we don't use an index buffer and use drawArrays instead of drawElements
-                gl.drawElements(gl.TRIANGLES, object.buffers.numVertices, gl.UNSIGNED_SHORT, offset);
-            }
+            // Draw the object
+            const offset = 0; // Number of elements to skip before starting
+
+            //if its a mesh then we don't use an index buffer and use drawArrays instead of drawElements
+            gl.drawElements(gl.TRIANGLES, object.buffers.numVertices, gl.UNSIGNED_SHORT, offset);
         })
     }
 

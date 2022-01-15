@@ -1,33 +1,36 @@
-import React, { Component } from 'react';
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
+import React from 'react';
+import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Screens from '../Pages/index.js';
 
-export class RouteManager extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        }
+const renderRoutes = (pageRoutes) => {
+    return Object.keys(pageRoutes).map((route) => {
+        return <Route key={route} path={route} element={pageRoutes[route]} />
+    });
+}
 
+const RouteManager = () => {
+    const pageRoutes = {
+        "/home": <Screens.Home />,
+        "/projects/": <Screens.Projects />,
+        "/opencvrockpaperscissors/": <Screens.RPS />,
+        "/about/": <Screens.About />,
+        "/appraisalemobileapp/": <Screens.Appraisale />,
+        "/cudpprogramming/": <Screens.CUDP />,
+        "/discordbot/": <Screens.DiscordBot />,
+        "/webglwork/": <Screens.WebGL />
     }
 
-    render() {
-        return (
-            <HashRouter basename="/">
-                <Switch>
-                    <Route exact path="/" render={() => { return <Redirect to="/home" /> }} />
-                    <Route path="/home" render={(routeProps) => (<Screens.Home {...routeProps} />)} />
-                    <Route path="/blog/" render={(routeProps) => (<Screens.Blog {...routeProps} />)} />
-                    <Route path="/projects/" render={(routeProps) => (<Screens.Projects {...routeProps} />)} />
-                    <Route path="/opencvrockpaperscissors/" render={(routeProps) => (<Screens.RPS {...routeProps} />)} />
-                    <Route path="/about/" render={(routeProps) => (<Screens.About {...routeProps} />)} />
-                    <Route path="/appraisalemobileapp/" render={(routeProps) => (<Screens.Appraisale {...routeProps} />)} />
-                    <Route path="/cudpprogramming/" render={(routeProps) => (<Screens.CUDP {...routeProps} />)} />
-                    <Route path="/discordbot/" render={(routeProps) => (<Screens.DiscordBot {...routeProps} />)} />
-                    <Route path="/webglwork/" render={(routeProps) => (<Screens.WebGL {...routeProps} />)} />
-                </Switch>
-            </HashRouter>
-        );
-    }
+    return (
+        <HashRouter basename="/">
+            <Routes>
+                {renderRoutes(pageRoutes)}
+                <Route
+                    path="*"
+                    element={<Navigate to="/home" />}
+                />
+            </Routes>
+        </HashRouter>
+    );
 }
 
 export default RouteManager;

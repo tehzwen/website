@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Components from '../Components/index';
+import { AnnouncementHeader, MyHeader, Footer, Boids } from '../Components/index';
 import { Grid, Image } from 'semantic-ui-react';
 
 
@@ -12,16 +12,17 @@ class About extends Component {
     render() {
         return (
             <Grid centered className="App">
-                <Components.AnnouncementHeader
-                    color={"#e6930e"}
+                <Boids />
+                <AnnouncementHeader
+                    color={"#ff130e"}
                     announcement={<h4>My new site (Construction Yard) is live now! Check it out <a href="http://constructionyard.ca/#/refinery">here!</a></h4>} />
-                <Components.MyHeader />
+                <MyHeader />
                 <Grid.Row className="GridRow" columns={'equal'} textAlign={"center"} style={{ marginBottom: "250px" }}>
                     <Grid.Column width={6}>
                         <center>
                             <h1 className="AboutTitle">About me</h1>
                             <Image size="small" rounded style={{ marginBottom: '25px' }} src={require('../Resources/selfie.jpg')} alt={"not found"} />
-                            <p className="AboutText">
+                            <p style={{fontSize:"22px"}} className="AboutText">
                                 My name is Zachary Shaw and I'm a full time software developer from Alberta Canada.
                                 I love to program and am constantly working on new projects that help solve
                                 everyday problems and make life a little easier for myself and those around me.
@@ -39,7 +40,7 @@ class About extends Component {
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column>
-                        <Components.Footer />
+                        <Footer />
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

@@ -1,64 +1,47 @@
-import React, { Component } from 'react'
+import { useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 import { Grid, Image } from 'semantic-ui-react';
 
-class ProjectBlock extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            imageString: "",
-            titleLink: "",
-            toProjectPage: false
-        };
+const ProjectBlock = (props) => {
+    const navigate = useNavigate();
 
-        this.contructTotalString = this.contructTotalString.bind(this);
-        this.goToLink = this.goToLink.bind(this);
-    }
+    const [imageString, setImageString] = useState(null);
+    const [titleLink, setTitleLink] = useState(null);
 
-    contructTotalString(stringVal) {
-        let tempString = this.props.title;
+    const contructTotalString = (stringVal) => {
+        let tempString = props.title;
         tempString.split(" ");
 
-        this.setState({
-            imageString: require("../Resources/" + stringVal),
-            titleLink: "/" + this.props.title.split(" ").join("").toLowerCase() + "/",
-        });
+        setImageString(require("../Resources/" + stringVal));
+        setTitleLink("/" + props.title.split(" ").join("").toLowerCase() + "/");
     }
 
-    goToLink() {
-        this.setState({
-            toProjectPage: true
-        });
-
-    }
-
-    componentWillMount() {
-        if (this.props.imageName !== undefined) {
-            this.contructTotalString(this.props.imageName);
+    useEffect(() => {
+        if (props.imageName !== undefined) {
+            contructTotalString(props.imageName);
         }
         else {
-            this.contructTotalString("defaultProject.jpg");
+            contructTotalString("defaultProject.jpg");
         }
-    }
+    }, []);
 
-    render() {
 
-        return (
-            <Grid textAlign="center">
-                <Grid.Row onClick={() => {this.props.history.push(this.state.titleLink)}} verticalAlign="middle" className="ProjectContainer">
-                    <Grid.Column width={4}>
-                        <Image
-                            alt={"not found"}
-                            size="tiny"
-                            src={this.state.imageString}/>
-                    </Grid.Column>
-                    <Grid.Column width={10}>
-                        <h2>{this.props.title}</h2>
-                    </Grid.Column>
-                </Grid.Row>
+    return (
+        <Grid textAlign="center">
+            <Grid.Row onClick={() => { navigate(titleLink) }} verticalAlign="middle" className="ProjectContainer">
+                <Grid.Column width={4}>
+                    <Image
+                        alt={"not found"}
+                        size="tiny"
+                        src={imageString} />
+                </Grid.Column>
+                <Grid.Column width={10}>
+                    <h2>{props.title}</h2>
+                </Grid.Column>
+            </Grid.Row>
 
-            </Grid>
-        )
-    }
+        </Grid>
+    )
 }
 
 export default ProjectBlock;
