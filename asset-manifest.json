@@ -1,24 +1,24 @@
 {
-  "main.css": "/website/static/css/main.c89d16e1.chunk.css",
-  "main.js": "/website/static/js/main.0bf2e96d.chunk.js",
-  "main.js.map": "/website/static/js/main.0bf2e96d.chunk.js.map",
-  "static/js/1.e1636ceb.chunk.js": "/website/static/js/1.e1636ceb.chunk.js",
-  "static/js/1.e1636ceb.chunk.js.map": "/website/static/js/1.e1636ceb.chunk.js.map",
-  "runtime~main.js": "/website/static/js/runtime~main.df8eefd1.js",
-  "runtime~main.js.map": "/website/static/js/runtime~main.df8eefd1.js.map",
-  "static/media/discordBot1.png": "/website/static/media/discordBot1.e88f3d01.png",
-  "static/media/discordBot2.png": "/website/static/media/discordBot2.088d791d.png",
-  "static/media/discordBot3.png": "/website/static/media/discordBot3.d8d2d0bc.png",
-  "static/media/discordBot4.png": "/website/static/media/discordBot4.3449c057.png",
-  "static/media/discordBot5.png": "/website/static/media/discordBot5.709da5e8.png",
-  "static/media/selfie.jpg": "/website/static/media/selfie.fe5e7897.jpg",
-  "static/media/appraisaleLogo.png": "/website/static/media/appraisaleLogo.fa040672.png",
-  "static/media/defaultProject.jpg": "/website/static/media/defaultProject.aa60b576.jpg",
-  "static/media/discordLogo.jpg": "/website/static/media/discordLogo.c7087c63.jpg",
-  "static/media/glCubes.png": "/website/static/media/glCubes.b6113906.png",
-  "static/media/refinery.png": "/website/static/media/refinery.8bd32941.png",
-  "static/css/main.c89d16e1.chunk.css.map": "/website/static/css/main.c89d16e1.chunk.css.map",
-  "index.html": "/website/index.html",
-  "precache-manifest.719648b535e3605a09781015f7501270.js": "/website/precache-manifest.719648b535e3605a09781015f7501270.js",
-  "service-worker.js": "/website/service-worker.js"
+  "files": {
+    "main.css": "/website/static/css/main.6a067d47.css",
+    "main.js": "/website/static/js/main.11cf9df3.js",
+    "static/media/defaultProject.jpg": "/website/static/media/defaultProject.07924b9d7a304bce21fb.jpg",
+    "static/media/discordBot2.png": "/website/static/media/discordBot2.9dd0c2d38c51c6ec0a3d.png",
+    "static/media/refinery.png": "/website/static/media/refinery.486924efb1931f971082.png",
+    "static/media/glCubes.png": "/website/static/media/glCubes.7f559978c4bbd03452c4.png",
+    "static/media/discordBot1.png": "/website/static/media/discordBot1.49c7eebade5687cc567d.png",
+    "static/media/selfie.jpg": "/website/static/media/selfie.0250c35aa0107ebdf9a1.jpg",
+    "static/media/discordBot4.png": "/website/static/media/discordBot4.a821ec10bad1726ea133.png",
+    "static/media/discordBot5.png": "/website/static/media/discordBot5.1504a778f04d3b22972a.png",
+    "static/media/discordBot3.png": "/website/static/media/discordBot3.50b41d30d2b527ec32dd.png",
+    "static/media/discordLogo.jpg": "/website/static/media/discordLogo.339b6eadb5efdcf51f53.jpg",
+    "static/media/appraisaleLogo.png": "/website/static/media/appraisaleLogo.faeb304ac517cdc30ae9.png",
+    "index.html": "/website/index.html",
+    "main.6a067d47.css.map": "/website/static/css/main.6a067d47.css.map",
+    "main.11cf9df3.js.map": "/website/static/js/main.11cf9df3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a067d47.css",
+    "static/js/main.11cf9df3.js"
+  ]
 }
